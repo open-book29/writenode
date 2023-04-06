@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from "../assets/logo.png"
-import { signInWithPopup, signOut } from 'firebase/auth';
 import { auth, provider } from '../firebase/config';
+import { signInWithPopup, signOut } from 'firebase/auth';
 
 export const Header = () => {
   const [isAuth, setIsAuth] = useState(JSON.parse(localStorage.getItem("isAuth")) || false);
